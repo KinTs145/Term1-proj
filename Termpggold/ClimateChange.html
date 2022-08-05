@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="summativeTwo.js"></script>
+    
+    <title>Climate change</title>
+</head>
+<!-- body start separate line ------------------------------------------------------------------------------------------------------------------------------------ -->
+<body  onload="main()">
+    <nav>
+        <ul class="flex-nav">
+            <p class="menu"><a>Menu</a></p>
+            <li><a href="#top">History</a></li>
+            <li><a href="#consequences">Famous musicians</a></li>
+            <li><a href="#dat">Popularity</a></li>
+            <li><a href="#tail">What about more?</a></li>
+            <li><a href="#top0">Home</a></li>
+        </ul>
+    </nav>
+    <!-- nav bar separate line ------------------------------------------------------------------------------------------------------------------------------------ -->
+    <div class="container-slide" id="top0">
+        <div class="content fade" >
+          <img src="star.jpg" style="width:100% ; opacity: 0.7; height:800px;">
+          <div class="text">
+              <h5>Benefits of listening to music?</h5>  
+              <p>Music reduces our depression when we are listening to it, music can benefits patients who have depressive symptoms too!</p>
+            </div>
+        </div>
+        
+        <div class="content fade">
+          <img src="box.jpg" style="width:100%; height: auto; opacity: 0.7; height:800px; object-fit: cover;">
+          <div class="textSec">
+              <h5><strong>Some famous musicians </strong></h5>
+                <ul>
+                    <li>The Beatles</li>
+                    <li>Led Zeppelin</li>
+                    <li>Elvis Presley</li>
+                    <li>Bob Dylan</li>
+                </ul>
+                <p>To see more musicians, <a href=https://www.musicianwave.com/greatest-musicians-of-all-time/s>see here</a></p> 
+            </div>
+        </div>
+        
+        <div class="content fade">
+            <img src="Tuner.jpg" style="width:100%; height: auto; opacity: 0.7; height:800px; object-fit: cover;">
+            <div class="text">
+                <h6>To the most popular musicians, <a href="#dat">click here</a></h6>
+            </div>
+        </div>
+        <a class="left" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="right" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <!-- slideshow separate line ------------------------------------------------------------------------------------------------------------------------------------ -->
+    
+    <div class ="txt">
+        
+        <h2 id="top">History of music?</h2>
+        <p><img class ="photo" src="music.jpg" style="width:200px;height:150px; object-fit: cover;">Music has been created a long time ago and no one knows how it starts but it has six separated periods which is Medieval, Renaissance, Baroque, Classical, Romantic.
+            Some songs and music even  existed before these period and experts need to guess and find clues from the ancient.</p>
+      
+        <br>
+        <br>
+            <h2>Different legendary musicians</h2>
+                <ul>
+                <li style="padding-bottom: 120px"><img class ="photo" src="thebeatles.jpg"  style="width:200px;height:150px; object-fit: cover;">
+                    The Beatles has influenced many of the people who listened to them. They has lead the fashion such as dressing and hair styles in the sixties.
+                Lots of their songs are recommended like: Don't let me down, Get Back, Twist and shout etc. </li>
+                <li style ="padding-bottom: 120px"><img class ="photo" src="ledzep.jpg"  style="width:200px;height:150px; object-fit: cover;">
+                    Led Zeppelin is the legendary rock and rool band which does not united for a long time. In fact they always united and disbanded. But each time they unite, they make great songs which people won't forgrt their music.
+                Their recommended music are: Black Dog, The rain songs and Ramble on etc.</li>
+                <li style="padding-bottom: 120px" id ="consequences"><img class ="photo" src="elvis.jpg"  style="width:200px;height:150px; object-fit: cover;">
+                    Elvis Preslry was one of the legendary rock and roll musician who make it into a greater culture. Also his dance are so good that you will love it after you watch once of his dance.
+                His recomended songs are: Unchained Melody, Hound Dog and If I can dream etc. </li>
+                </ul> 
+    </div>
+    <br>
+    <br>
+    
+    <!-- Iseparate line ------------------------------------------------------------------------------------------------------------------------------------ -->
+    <div class="background">
+        <br>
+        <h2 style="margin-left: 20%; margin-right: 20%;">The review of the popularity of current musicians</h2>
+        <p style="margin-left: 20%; margin-right: 20%;">Some of the current period of musicians has been collect to this bar chart. These musicians has been in cantact with different genre of music like anime, jazz, rock etc.</p>
+        <p id="dat" style="margin-left: 20%; margin-right: 20%;" >There are a lot of musicians and <strong>To see more you can hover the bars in the chart to see the details information!</strong>  </p>
+    <!-- data -->
+        <div id="data" class="hide">
+            <p><strong>This musician has got</strong></p>
+            <p><span id="value">100</span> scores</p>
+        </div>
+        <svg onload="main()" width=1900 height=900></svg>
+   
+        <p style="color: rgb(63, 177, 101); font-style: italic; font-size:20px; text-align: center;">Modified from Kaggle- prediction of music genre: <a href ="https://www.kaggle.com/datasets/vicsuperman/prediction-of-music-genre">here</a></p>
+     </div>
+    <!-- data -->
+    
+    <!-- Iseparate line ------------------------------------------------------------------------------------------------------------------------------------ -->
+    <script src="summative.js"></script>
+    <div class="backgroundSec">
+    <div class ="txt">
+        <h2 id="tail">Why you should listen more music?</h2>
+        <ul>
+            <li>Music strength learning and memory, examples like you can learn Japanese characters if you listen to musics like anime or Jpop musics.</li>
+            <li class="bot">Musics can reduces pain as a research did by  Drexel University in Philadelphia has proved that music therapy has done more positive effect to cancer patients.</li>
+        </ul>
+    </div>
+    </div>
+   
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
